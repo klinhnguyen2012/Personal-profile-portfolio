@@ -1,0 +1,19 @@
+# Local planning notes and working specs
+docs/superpowers/
+
+# Local Python virtual environment
+.venv/
+
+# Node dependencies and generated build output
+**/node_modules/
+**/.next/
+**/dist/
+portfolio-site/.sites-runtime/
+
+# Local environment and secret files
+.env
+.env.*
+!.env.example
+
+# Local editor and OS files
+.DS_Store
