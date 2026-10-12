@@ -136,7 +136,7 @@ a:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 4px; }
 .cover-script { position: relative; z-index: 1; display: block; width: fit-content; margin: 0.35rem 0 clamp(1.8rem, 4vw, 3rem) 0.2em; color: #ff3d0a; font-family: "Brush Script MT", "Segoe Script", cursive; font-size: clamp(3rem, 7vw, 6rem); font-style: italic; line-height: 1.15; transform: rotate(-5deg); }
 .cover-name { margin: 0; color: #ff3d0a; font-size: clamp(1rem, 2.5vw, 2rem); font-weight: 700; }
 .cover-role { margin: 0.5rem 0 0; color: #fff; font-size: clamp(0.75rem, 1.3vw, 1rem); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
-.cover-greeting { position: absolute; z-index: 1; top: 55%; left: clamp(1.5rem, 5vw, 4.5rem); display: grid; color: #fff; font-family: Impact, "Arial Narrow", sans-serif; font-size: clamp(2.2rem, 4.8vw, 4.8rem); line-height: 0.82; text-transform: uppercase; }
+.cover-greeting { position: absolute; z-index: 1; top: 55%; right: clamp(1.5rem, 5vw, 4.5rem); left: auto; display: grid; justify-items: end; color: #fff; font-family: Impact, "Arial Narrow", sans-serif; font-size: clamp(2.2rem, 4.8vw, 4.8rem); line-height: 0.82; text-align: right; text-transform: uppercase; }
 .cover-greeting em { justify-self: end; color: #ff3d0a; font-family: "Brush Script MT", "Segoe Script", cursive; font-size: 0.78em; font-style: italic; line-height: 0.8; text-transform: none; transform: rotate(-8deg); }
 .section-index { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); align-items: end; gap: clamp(0.5rem, 1.5vw, 1.25rem); padding-top: 1rem; border-top: 1px solid rgb(255 255 255 / 38%); }
 .index-link { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 0.55rem; min-width: 0; padding: 0.25rem 0; color: #fff; text-decoration: none; }
@@ -392,7 +392,7 @@ a:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 4px; }
   .cover-script { font-size: clamp(3.3rem, 15vw, 5.2rem); }
   .cover-name { margin-top: 0.25rem; font-size: 1.05rem; }
   .cover-role { max-width: 17rem; margin-inline: 0; font-size: 0.64rem; line-height: 1.5; }
-  .cover-greeting { top: 51%; left: 1.25rem; font-size: clamp(2.1rem, 9vw, 3.2rem); }
+  .cover-greeting { top: 51%; right: 1.1rem; left: auto; font-size: clamp(1.8rem, 8vw, 2.8rem); }
   .section-index { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.15rem 0.65rem; }
   .index-link { gap: 0.4rem; padding-block: 0.4rem; }
   .index-link:last-child { grid-column: auto; width: auto; }
