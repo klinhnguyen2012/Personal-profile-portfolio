@@ -1,3 +1,5 @@
+import { OpeningScrollScene } from "./opening-scroll-scene";
+
 const sections = [
   { id: "about", number: "01", name: "Who is Linh?" },
   { id: "learn", number: "02", name: "Learn" },
@@ -80,8 +82,9 @@ export default function Home() {
       </header>
 
       <main id="main-content">
+        <OpeningScrollScene>
         <section className="cover frame" id="top" aria-labelledby="cover-title">
-          <img className="cover-photo" src="/assets/cover/night-portrait-1800.jpg" srcSet="/assets/cover/night-portrait-900.jpg 900w, /assets/cover/night-portrait-1800.jpg 1800w" sizes="(max-width: 40rem) calc(100vw - 2rem), 96vw" alt="Linh reaching toward the night sky above a city lit after dark" fetchPriority="high" />
+          <img className="cover-photo" src="/assets/cover/night-portrait-1800.jpg" srcSet="/assets/cover/night-portrait-900.jpg 900w, /assets/cover/night-portrait-1800.jpg 1800w" sizes="100vw" alt="Linh reaching toward the night sky above a city lit after dark" fetchPriority="high" />
           <div className="cover-shade" aria-hidden="true" />
           <div className="cover-content">
             <h1 id="cover-title">Portfolio</h1>
@@ -103,7 +106,7 @@ export default function Home() {
           </nav>
         </section>
 
-        <section className="current-products frame" aria-labelledby="current-products-title">
+        <section className="current-products frame" data-opening-products aria-labelledby="current-products-title">
           <div className="current-products-heading">
             <div>
               <p className="current-products-kicker">A selection of products and prototypes</p>
@@ -122,6 +125,7 @@ export default function Home() {
             ))}
           </div>
         </section>
+        </OpeningScrollScene>
 
         {sections.map((section) => (
           <section className={`portfolio-section frame section-${section.id}`} id={section.id} key={section.id} aria-labelledby={`${section.id}-title`}>
